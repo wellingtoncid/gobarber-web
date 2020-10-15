@@ -5,6 +5,7 @@ import DayPicker, { DayModifiers } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 
 import { FiPower, FiClock } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import {
   Container,
   Header,
@@ -12,7 +13,7 @@ import {
   Profile,
   Content,
   Schedule,
-  NextAppointments,
+  NextAppointment,
   Section,
   Appointment,
   Calendar,
@@ -143,7 +144,9 @@ const Dashboard: React.FC = () => {
             <img src={user.avatar_url} alt={user.name} />
             <div>
               <span>Bem vindo,</span>
-              <strong>{user.name}</strong>
+              <Link to="/profile">
+                <strong>{user.name}</strong>
+              </Link>
             </div>
           </Profile>
 
@@ -163,7 +166,7 @@ const Dashboard: React.FC = () => {
           </p>
 
           {isToday(selectedDate) && nextAppointment && (
-            <NextAppointments>
+            <NextAppointment>
               <strong>Agendamento a seguir</strong>
               <div>
                 <img
@@ -177,7 +180,7 @@ const Dashboard: React.FC = () => {
                   {nextAppointment.hourFormatted}
                 </span>
               </div>
-            </NextAppointments>
+            </NextAppointment>
           )}
 
           <Section>
