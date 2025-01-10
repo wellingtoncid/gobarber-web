@@ -1,5 +1,5 @@
 <div align="center" style="margin-bottom: 20px;">
-<img alt="gobarber" src="./img/logo.png" width="auto" heigth="auto"/>
+<!-- <img alt="gobarber" src="./img/logo.png" width="auto" heigth="auto"/> -->
 </div>
 
 <div align="center" style="margin: 20px;">
@@ -99,6 +99,4 @@ $ yarn && yarn android && yarn start
 
 ### :memo: Licença
 
-Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.
-
-<p align="center" style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">Feito com :purple_heart: by <strong> Wellington Cid</strong> </p>
+Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes. Feito com :purple_heart: by <strong> Wellington Cid</strong>
